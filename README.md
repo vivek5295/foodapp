@@ -21,7 +21,7 @@ FitFuel is a simple and responsive fitness meal delivery web app designed to hel
 
 > Username: `admin`  
 > Password: `admin`  
-> Redirects to: `vivek.html`
+
 
 ## 📁 Project Structure
 

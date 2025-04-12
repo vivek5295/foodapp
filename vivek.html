@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitFuel - Fitness Meal Delivery Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">Fit<span>Fuel</span></div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#meals">Meal Plans</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#nutrition">Nutrition</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+                <div class="nav-buttons">
+                    <a href="index.html" class="btn login-btn">Log In</a>
+                    <a href="index.html" class="btn signup-btn">Sign Up</a>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Fuel Your Fitness Journey</h1>
+                <p>Delicious, nutritionally balanced meals delivered to your door. Designed for active lifestyles and fitness goals.</p>
+                <div class="hero-buttons">
+                    <a href="#nutrition" class="btn primary-btn">Start Your Plan</a> <!-- Updated link -->
+                    <a href="#nutrition" class="btn secondary-btn">View Menu</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="c:\Users\inspiron\Downloads\images.jpeg" alt="Fitness meal prep">
+            </div>
+        </div>
+    </section>
+
+    <section id="meals" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Meal Plans</h2>
+                <p>Choose the plan that fits your lifestyle and fitness goals</p>
+            </div>
+            <div class="meal-plans" id="mealPlans">
+                <!-- Meal plans will be loaded with JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>How It Works</h2>
+                <p>Simple steps to get fresh, nutritious meals delivered to your door</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-icon">1</div>
+                    <h3>Choose Your Plan</h3>
+                    <p>Select from our range of meal plans tailored to different fitness goals and dietary preferences.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">2</div>
+                    <h3>Customize Your Meals</h3>
+                    <p>Personalize your weekly menu based on your taste preferences and nutritional needs.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">3</div>
+                    <h3>Receive Your Delivery</h3>
+                    <p>We deliver fresh, pre-portioned meals in eco-friendly packaging right to your doorstep.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">4</div>
+                    <h3>Heat & Enjoy</h3>
+                    <p>Simply heat your meals in minutes and enjoy nutritious, delicious food that supports your fitness goals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="nutrition" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nutrition Information</h2>
+                <p>We believe in transparency and quality ingredients</p>
+            </div>
+            <div class="nutrition-grid">
+                <div class="nutrition-item">
+                    <div class="nutrition-icon">
+                        <img src="c:\Users\inspiron\Downloads\download (1).jpeg" alt="Protein">
+                    </div>
+                    <h3>High Protein</h3>
+                    <p>Our meals are packed with lean proteins to support muscle growth and recovery.</p>
+                    <button class="btn primary-btn" id="highProteinBtn">View High Protein Foods</button>
+                    <div class="high-protein-foods" id="highProteinFoods" style="display: none;">
+                        <h3>High Protein Foods</h3>
+                        <ul>
+                            <li>Chicken Breast</li>
+                            <li>Salmon</li>
+                            <li>Turkey Breast</li>
+                            <li>Lean Beef</li>
+                            <li>Lentils</li>
+                            <li>Greek Yogurt</li>
+                            <li>Eggs</li>
+                            <li>Quinoa</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nutrition-item">
+                    <div class="nutrition-icon">
+                        <img src="c:\Users\inspiron\Downloads\closeup-athletic-woman-adding-strawberries-while-making-fruit-salad-kitchen_637285-6186.avif" alt="Balanced">
+                    </div>
+                    <h3>Balanced Macros</h3>
+                    <p>Perfectly balanced macronutrients tailored to your specific fitness goals.</p>
+                    <button class="btn primary-btn" id="balancedMacrosBtn">View Balanced Macro Foods</button>
+                    <div class="balanced-macro-foods" id="balancedMacroFoods" style="display: none;">
+                        <h3>Balanced Macro Foods</h3>
+                        <ul>
+                            <li>Grilled Chicken Breast with Brown Rice and Vegetables</li>
+                            <li>Baked Salmon with Sweet Potato and Green Beans</li>
+                            <li>Turkey and Avocado Wrap with Mixed Greens</li>
+                            <li>Quinoa and Black Bean Bowl with Grilled Chicken</li>
+                            <li>Stir-Fried Shrimp with Brown Rice and Mixed Vegetables</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nutrition-item">
+                    <div class="nutrition-icon">
+                        <img src="c:\Users\inspiron\Downloads\images (1).jpeg" alt="Fresh">
+                    </div>
+                    <h3>Fresh Ingredients</h3>
+                    <p>We use only the freshest, high-quality ingredients in all our meals.</p>
+                    <button class="btn primary-btn" id="freshIngredientsBtn">View Fresh Ingredients</button>
+                    <div class="fresh-ingredients" id="freshIngredientsList" style="display: none;">
+                        <h3>Fresh Fruits and Vegetables</h3>
+                        <ul>
+                            <li>Asparagus</li>
+                            <li>Broccoli</li>
+                            <li>Spinach</li>
+                            <li>Strawberries</li>
+                            <li>Blueberries</li>
+                            <li>Carrots</li>
+                            <li>Radishes</li>
+                            <li>Peas</li>
+                            <li>Bell Peppers</li>
+                            <li>Tomatoes</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nutrition-item">
+                    <div class="nutrition-icon">
+                        <img src="c:\Users\inspiron\Downloads\download (2).jpeg" alt="No Additives">
+                    </div>
+                    <h3>No Additives</h3>
+                    <p>Free from artificial preservatives, colors, and flavor enhancers.</p>
+                    <button class="btn primary-btn" id="noAdditivesBtn">View No Additives Foods</button>
+                    <div class="no-additives-foods" id="noAdditivesList" style="display: none;">
+                        <h3>No Additives Foods</h3>
+                        <ul>
+                            <li>Fresh Fruits (e.g., apples, bananas, berries)</li>
+                            <li>Fresh Vegetables (e.g., carrots, spinach, broccoli)</li>
+                            <li>Whole Grains (e.g., brown rice, quinoa)</li>
+                            <li>Lean Proteins (e.g., chicken breast, fish)</li>
+                            <li>Nuts and Seeds (e.g., almonds, chia seeds)</li>
+                            <li>Legumes (e.g., lentils, chickpeas)</li>
+                            <li>Plain Yogurt</li>
+                            <li>Natural Nut Butters</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="nutrition-calculator">
+                <h3>Macro Calculator</h3>
+                <p>Find out your ideal macronutrient balance based on your fitness goals</p>
+                <form id="macroForm" class="macro-form">
+                    <div class="form-group">
+                        <label for="weight">Weight (kg)</label>
+                        <input type="number" id="weight" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="height">Height (cm)</label>
+                        <input type="number" id="height" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="age">Age</label>
+                        <input type="number" id="age" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">Gender</label>
+                        <select id="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="activity">Activity Level</label>
+                        <select id="activity">
+                            <option value="sedentary">Sedentary (office job)</option>
+                            <option value="light">Light Exercise (1-2 days/week)</option>
+                            <option value="moderate">Moderate Exercise (3-5 days/week)</option>
+                            <option value="heavy">Heavy Exercise (6-7 days/week)</option>
+                            <option value="athlete">Athlete (2x per day)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="goal">Goal</label>
+                        <select id="goal">
+                            <option value="lose">Lose Weight</option>
+                            <option value="maintain">Maintain Weight</option>
+                            <option value="gain">Gain Muscle</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn primary-btn">Calculate</button>
+                </form>
+                <div id="macroResults" class="macro-results"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Customers Say</h2>
+                <p>Real results from real people</p>
+            </div>
+            <div class="testimonial-slider" id="testimonialSlider">
+                <!-- Testimonials will be loaded with JavaScript -->
+            </div>
+            <div class="slider-controls">
+                <button id="prevBtn" class="slider-btn">&lt;</button>
+                <button id="nextBtn" class="slider-btn">&gt;</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Everything you need to know about our service</p>
+            </div>
+            <div class="faq-container" id="faqContainer">
+                <!-- FAQ items will be loaded with JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Fuel Your Fitness Journey?</h2>
+            <p>Join thousands of satisfied customers who have transformed their nutrition and fitness with FitFuel.</p>
+            <button class="btn primary-btn">Get Started Today</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <div class="logo">Fit<span>Fuel</span></div>
+                    <p>Delicious, nutritionally balanced meals delivered to your door. Designed for active lifestyles and fitness goals.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">FB</a>
+                        <a href="#" class="social-icon">IG</a>
+                        <a href="#" class="social-icon">TW</a>
+                        <a href="#" class="social-icon">YT</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#meals">Meal Plans</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#nutrition">Nutrition</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for nutrition tips, recipes, and exclusive offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn primary-btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FitFuel. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookies Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyDyGTWlNUMv3G-5xr47PpGtTh04ePI0IJM",
+          authDomain: "foodapp-542e2.firebaseapp.com",
+          projectId: "foodapp-542e2",
+          storageBucket: "foodapp-542e2.firebasestorage.app",
+          messagingSenderId: "521118827564",
+          appId: "1:521118827564:web:bfb99c21165d8ce6b13d89",
+          measurementId: "G-4BSGJHF1T6"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+</body>
+</html>

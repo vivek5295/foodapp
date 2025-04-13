@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Nutrition Chart</title>
+    <link rel="stylesheet" href="chart.css">
+</head>
+<body>
+    <header>
+        <h1>Your Nutrition Chart</h1>
+    </header>
+    <main>
+        <table id="chartTable">
+            <thead>
+                <tr>
+                    <th>Food Item</th>
+                    <th>Protein / 100g</th>
+                    <th>Price / 100g (₹)</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Items will be added here dynamically -->
+            </tbody>
+        </table>
+        <div id="noItemsMessage" style="display: none; text-align: center; margin-top: 20px; color: #999;">
+            No items selected.
+        </div>
+    </main>
+    <footer>
+        <button onclick="clearChart()">Clear Chart</button>
+    </footer>
+    <script src="chart.js"></script>
+</body>
+</html>
